@@ -1,0 +1,29 @@
+formatter: markdown
+output:
+  file: "README.md"
+sort:
+  enabled: true
+content: |-
+  # AzureRM Networking Module
+  This module allows managing resources related to Azure networks:
+  - Virtual Networks
+  - Subnets
+  - Network security groups
+  - Network security group rules
+
+  # Examples
+  ## tfvars
+  You can set up the variables in `terraform.tfvars` file
+  ```hcl
+  {{ include "examples/tfvars/terraform.tfvars" }}
+  ```
+
+  ## Multiple Security Rules
+  You can configure multiple NSG rules for one or multiple
+
+  ```hcl
+  {{ include "examples/multiple_security_rules/main.tf" }}
+  ```
+  {{ .Inputs }}
+
+  {{ .Outputs }}

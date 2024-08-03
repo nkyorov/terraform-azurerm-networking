@@ -1,0 +1,6 @@
+quiet: true
+download-external-modules: true
+skip-path:
+  - examples
+skip-check:
+  - CKV2_GHA_1
