@@ -1,4 +1,5 @@
 quiet: true
+download-external-modules: true
 skip-path:
   - examples
 skip-check:
