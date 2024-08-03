@@ -45,10 +45,13 @@ You can configure multiple NSG rules for one or multiple
 
 ```hcl
 module "naming" {
-  source = "Azure/naming/azurerm"
+  source  = "Azure/naming/azurerm"
+  version = "0.4.1"
+
   suffix = ["multiple-security-rules"]
 }
 
+#tflint-ignore: all
 module "network" {
   source = "../../"
 
